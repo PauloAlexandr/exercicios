@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, inicial-scale= 1.0">
+    <title> Navengando</title>
+    <pre><html>
+        <body bgcolor= "# 290622" text= "gold"><body>
+        <script> 
+        function soma() 
+        {
+        form.campo4.value = (form.campo1.value*1) * (form.campo2.value*1) 
+        form.campo3.value = (form.campo4.value*1)+ (form.campo1.value*1)
+        form.campo5.value = ((form.campo4.value*1)/5)
+        form.campo6.value = ((form.campo4.value*1)/5)*4
+        form.campo7.value = ((form.campo6.value*1)/3)
+        form.campo8.value = ((form.campo6.value*1)-(form.campo7.value*1))
+        form.campo9.value = ((form.campo1.value*1)+(form.campo8.value*1))
+        }
+        </script>
+        <form name="form">
+        Calculadora de investimentos.<br>
+        Digite seu saldo:                        
+        <input name="campo1">
+        Digite a taxa do mÃªs:  
+        <input name="campo2">                        
+        <ul><input type="button" onclick="soma()" value= "Calcular"></ul>
+        Rendimento bruto de:                      
+        <input name="campo3"> 
+        Lucro bruto foi de: 
+        <input name="campo4" readonly><br>                         
+        Subtraindo Desconto de IR de R$:          
+        <input name="campo5"> 
+        O lucro passou para R$:                         
+        <input name="campo6">
+        Valor da taxa ADM foi de R$:             
+        <input name="campo7">
+        Rendimento liquido: 
+        <input name="campo8"><br>                         
+        
+        Saldo atual:
+        <input name="campo9"><br>
+        <input type="reset" value="Reset">
+    </ul> 
+    </form>
+       </body>
+    </html></pre>
+    </script>
+     </form>
+       </body>
+    </html>
+    </pre>  
+        
+    <script>   
+    

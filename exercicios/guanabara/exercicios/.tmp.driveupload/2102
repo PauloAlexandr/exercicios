@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrão</title>
+    <link rel="shortcut icon" href="P1.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Reprodozindo audios</h1>
+    <p>Vamos aprender inserir audios em HTML5</p>
+    <audio controls autoplay loop>
+        <source src="midias/BackInTime08Pit.bull.mp3" type="audio/mpeg">
+        <source src="midias/BackInTime08Pit.bull.ogg" type="audio/ogg">
+        <source src="midias/BackInTime08Pit.bull.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz audios, <a href="midias/BackInTime08Pit.bull.mp3">
+        clique aqui para fazer o download do arquivo</a> </p>
+    </audio>
+
+
+</body>
+</html>

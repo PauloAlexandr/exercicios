@@ -1,0 +1,99 @@
+<link rel="shortcut icon" href="P1.ico" type="image/x-icon">
+
+import 'package:flutter/material.dart';
+import 'dart:math';
+
+void main() {
+  runApp(MaterialApp(
+    home: Home(),
+    debugShowCheckedModeBanner: false,
+  ));
+}
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  var _frases = ["01", "02", "03", "04", "05", "06"];
+  var _fraseGerada = "Chute um número";
+
+  void _gerarFrase() {
+// 0, 1
+    var numeroSorteado = Random().nextInt(_frases.length);
+    setState(() {
+      _fraseGerada = _frases[numeroSorteado];
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Jogo de dado"),
+        backgroundColor: Colors.orange,
+      ),
+      body: Center(
+        child: Container(
+          padding: EdgeInsets.all(18),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("imagens/dados.jpg"),
+              Text(
+                "Clique em Jogar e boa sorte!!!",
+                textAlign: TextAlign.justify,
+                style: TextStyle(
+                    fontSize: 30,
+                    fontStyle: FontStyle.italic ,
+                    color: Colors.black),
+              ),
+              Text(
+                _fraseGerada,
+                textAlign: TextAlign.justify,
+                style: TextStyle(
+                    fontSize: 30,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.black),
+              ),
+              RaisedButton(
+                child: Text(
+                  "Jogar",
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+                color: Colors.blue,
+                onPressed: _gerarFrase,
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+4256523654
+joãopaulorochademelo@gmail.com
+
+CPF 42718424869
+RG 54293615X 
+S Poup!2007
+│
+Paleta verde 12/01/2023{
+#3B754A, #177530, #7BF79C, #32F567, #27C250
+}
+cor1#657509
+cor2#6B743A
+cor3#A7C210
+cor4#D3F514
+cor5#E0F75E
+----------------------------------
+#624F80
+#797580
+#C39EFF
+#C2BCCC
+#F1E9FE
